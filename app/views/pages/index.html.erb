@@ -1,0 +1,35 @@
+
+
+  <div id="wraper">
+    <section id="main" class="wrapper">
+      <div class="container text-center">
+        <div clss inner>
+
+        <h1 class="display-4">Characters of Harry Potter</h1>
+            <div class= "table-container">
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>Name</th> <br>
+                      <th>Location</th><br>
+                      <th>House</th><br>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% @characters.each do |character| %>
+                      <tr>
+                        <td><%= character.name %></td>
+                        <td><%= character.location %></td>
+                        <td><%= character.house %></td>
+                      </tr>
+                    <% end %>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
