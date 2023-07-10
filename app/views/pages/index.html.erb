@@ -1,35 +1,48 @@
 
 
-  <div id="wraper">
-    <section id="main" class="wrapper">
-      <div class="container text-center">
-        <div clss inner>
-
-        <h1 class="display-4">Characters of Harry Potter</h1>
-            <div class= "table-container">
-                <table class="table table-striped">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th>Name</th> <br>
-                      <th>Location</th><br>
-                      <th>House</th><br>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <% @characters.each do |character| %>
-                      <tr>
-                        <td><%= character.name %></td>
-                        <td><%= character.location %></td>
-                        <td><%= character.house %></td>
-                      </tr>
-                    <% end %>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4>Sistema de las Casas </h4>
+          Ceremonia de selección...
+          Los alumnos pertenecientes a cada casa no necesariamente tienen todas las cualidades que caracterizan a
+          cada una de ellas. Hay casos en los que el Sombrero Seleccionador recibe estudiantes que le hacen dudar 
+          sobre a qué casa deberían ser asignados. En caso de que el Sombrero dude durante más de cinco minutos,
+          a ese estudiante se le denomina Hatstall.
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col">
+        <div class="table-container">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>House</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @characters.each do |character| %>
+              <tr>
+                <td><%= character.name %></td>
+                <td><%= character.location %></td>
+                <td><%= character.house %></td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <%= image_tag("05.png", alt: "torneo", size: "450x300", class: "img-fluid") %>
+        </div>
+      </div>
+    </div>
   </div>
-
-
+  
+ 

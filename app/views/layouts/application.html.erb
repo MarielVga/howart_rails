@@ -2,16 +2,64 @@
 <html>
   <head>
     <title>HowartRails</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css', crossorigin: 'anonymous' %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   </head>
 
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <%= image_tag("01.png", sizes: "100x100", class: "img-fluid") %>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <h1 class="display-4">Characters of Harry Potter</h1>
+          <p class="mb-4">
+            <h4>Hogwarts sigue una tradición muy curiosa, y es que cada casa tiene un fantasma asociado.</h4>
+          </p>
+          <p class="mb-4">
+            Ellos proporcionan ayuda a sus estudiantes, y participan en la competitividad entre las distintas casas.
+          </p>
+          <p><h4>Casas de Hogwarts </h4></p>
+          <p>
+            Las cuatro casas se llaman Gryffindor, Hufflepuff, Ravenclaw y Slytherin. Cada casa tiene su propia noble historia
+            y cada una ha producido notables brujas y magos. Mientras estéis en Hogwarts, vuestros triunfos conseguirán que las 
+            casas ganen puntos, mientras que cualquier infracción de las reglas hará que los pierdan. Al finalizar el año, 
+            la casa que obtenga más puntos será premiada con la copa de la casa, un gran honor. Espero que todos vosotros 
+            seréis un orgullo para la casa que os toque.Mine</p>
+            <h6> El Sombrero Seleccionador </h6 > Muchas veces pone a un estudiante para asignar en una casa por tradición familiar. Este es el caso de Draco Malfoy, 
+              Fred Weasley, George Weasley, Vincent Crabbe, Gregory Goyle, Ron Weasley, Ginny Weasley... Hay circunstancias, sin embargo, en las que 
+              se rompe esta tradición, como en los casos de Sirius Black y Albus Potter.</h6 > <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row display-4">
+        <div class="col">
+          <table class="table">
+            <tr>
+              <!-- Contenido de la primera fila -->
+            </tr>
+            <tr>
+              <!-- Contenido de la segunda fila -->
+            </tr>
+            <tr>
+              <!-- Contenido de la tercera fila -->
+            </tr>
+            <tr>
+              <!-- Contenido de la cuarta fila -->
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
